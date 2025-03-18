@@ -1,0 +1,195 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4e8; /* Light cream background */
+}
+
+.left-section {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.welcome-video {
+  margin-bottom: 20px;
+}
+
+.right-section {
+  width: 40%;
+  background-color: #f7da5b; /* Yellow background for right section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Added padding for better spacing */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for better visual */
+  border-radius: 15px; /* Rounded corners */
+  margin: 20px; /* Added margin for spacing */
+  height: calc(100vh - 40px); /* Adjusted height to use the space below */
+}
+
+/* Added to organize the right side content in a column */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #f9f9f2;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #2a7d9e; /* Teal blue color for heading */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nav-button {
+  text-decoration: none;
+  background-color: #f7da5b; /* Yellow button background */
+  color: #333;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #2a7d9e; /* Teal on hover */
+  color: white;
+  transform: translateY(-3px);
+}
+
+.profile-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 15px; /* Added space below profile container */
+}
+
+.profile-image-border {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 8px solid #2a7d9e; /* Teal border */
+  overflow: hidden;
+  background-color: white;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Decorative shape behind the image */
+.shape-behind {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+}
+
+.name-below-picture {
+  text-align: center; /* Centered the name */
+  margin-top: 10px;
+  margin-bottom: 15px; /* Added space below name */
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Made name bold */
+  color: #2a7d9e; /* Teal blue color */
+}
+
+.social-links {
+  display: flex; /* Made links display in a row */
+  justify-content: center; /* Centered the links */
+  gap: 25px; /* Increased spacing between icons */
+  margin-top: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #2a7d9e; /* Teal color for links */
+  font-size: 1.5rem; /* Increased icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #333; /* Darker color on hover */
+  transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-image-border {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #2a7d9e;
+  }
+
+  .shape-behind {
+    width: 220px;
+    height: 220px;
+    top: -5px;
+    left: -5px;
+  }
+
+  .name-below-picture {
+    font-size: 1.2rem;
+  }
+
+  .social-links {
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+}

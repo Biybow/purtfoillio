@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    background-color: #eef2e2; /* Light background */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222052; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f9ee; /* Slightly lighter background for container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #247291; /* Primary blue for headings */
+    padding: 20px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #247291; /* Primary blue for subheadings */
+    border-bottom: 2px solid #f7da5b; /* Yellow accent for borders */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+p {
+    color: #222052; /* Dark text color */
+    padding: 15px;
+    background-color: #f5f9ee; /* Light background for paragraphs */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+a {
+    color: #247291; /* Primary blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f7da5b; /* Yellow accent for hover states */
+    text-decoration: underline;
+}
+
+/* Navigation Links */
+.section-nav {
+    text-align: center;
+    margin: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: #f5f9ee;
+    padding: 10px 0;
+    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.section-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.section-nav a {
+    color: #247291; /* Primary blue for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.section-nav a:hover {
+    color: #f7da5b; /* Yellow accent for hover states */
+    text-decoration: underline;
+}
+
+/* Go Top and Home Buttons */
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #f7da5b; /* Yellow accent for buttons */
+    color: #222052; /* Dark text color for buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6c94d; /* Slightly darker yellow for button hover */
+}
+
+.fa-arrow-up, .fa-home {
+    margin-right: 5px;
+}
+
+.gallery {
+    display: inline-block;
+    width: 200px;
+    height: 250px; /* Fixed height for gallery containers */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery .description {
+    padding: 17px;
+    text-align: center;
+    background-color: #247291;
+    color: white;
+    font-weight: bold;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for footer */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #222052; /* Dark text color */
+}
+
+footer a {
+    color: #247291; /* Primary blue for footer links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f7da5b; /* Yellow accent for hover states */
+}
+
+footer .fab {
+    font-size: 24px;
+}

@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2e2; /* Light background */
+    margin: 0;
+    padding: 20px;
+    color: #222052; /* Dark text color */
+}
+
+.resume {
+    max-width: 800px;
+    margin: auto;
+    background: #f5f9ee; /* Slightly lighter background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 20px;
+    border: 3px solid #247291; /* Optional: Adds a border around the photo */
+}
+
+h1 {
+    color: #247291; /* Primary blue color for the heading */
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #222052; /* Dark text color */
+}
+
+h2 {
+    color: #247291; /* Primary blue color for subheadings */
+    border-bottom: 2px solid #f7da5b; /* Yellow underline */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #222052; /* Dark text color */
+    background-color: #f5f9ee; /* Light background for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f7da5b; /* Yellow background on hover */
+    color: #222052; /* Dark text color on hover */
+}
+
+.resume section {
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #f7da5b;
+    color: #222052;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e6c94d;
+}
+
+.fa-home {
+    margin-right: 5px;
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #247291;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #f7da5b;
+}
