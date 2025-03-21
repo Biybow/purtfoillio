@@ -14,9 +14,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #2a7d9e;
+  background-color: #2a7d9e; /* Darker blue for nav */
   padding: 15px 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -34,10 +34,14 @@ body {
 
 .nav-menu {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
   gap: 25px;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
@@ -78,6 +82,32 @@ body {
   font-size: 1.5rem;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .nav-menu {
+      position: fixed;
+      top: 60px;
+      right: -100%;
+      flex-direction: column;
+      background-color: #1a1940;
+      width: 70%;
+      height: calc(100vh - 60px);
+      padding: 20px;
+      transition: all 0.5s ease;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+  }
+  
+  /* Add this to handle the mobile menu toggle */
+  .nav-menu.active {
+      right: 0;
+  }
+}
 /* Main Content Sections */
 .left-section {
   width: 60%;
