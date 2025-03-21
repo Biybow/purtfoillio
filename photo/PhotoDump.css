@@ -20,7 +20,7 @@ h1 {
   .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #eef2e2; /* Very light mint for container */
+    background-color: #f5f9ee; /* Very light mint for container */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(34, 32, 82, 0.1);
