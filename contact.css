@@ -1,9 +1,110 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: #eef2e2; /* Light background */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eef2e2; /* Dark text color */
+  margin: 0;
+  padding: 10px;
+  line-height: 1.6;
+}
+/* Improved Navigation Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2a7d9e; /* Darker blue for nav */
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.logo {
+  color: #f7da5b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  display: flex;
   margin: 0;
   padding: 0;
-  background-color: #f5f9ee;
-  color: #222052;
+  gap: 25px;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #f5f9ee;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f7da5b;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #f7da5b;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .nav-menu {
+      position: fixed;
+      top: 60px;
+      right: -100%;
+      flex-direction: column;
+      background-color: #1a1940;
+      width: 70%;
+      height: calc(100vh - 60px);
+      padding: 20px;
+      transition: all 0.5s ease;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+  }
+  
+  /* Add this to handle the mobile menu toggle */
+  .nav-menu.active {
+      right: 0;
+  }
 }
 
 .container {
@@ -42,14 +143,14 @@ h1 {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  background-color: #f7da5b;
+  background-color: #247291;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .contact-item:hover {
-  background-color: #247291;
-  color: #f5f9ee;
+  background-color: #f7da5b;
+  color: #222052;
 }
 
 .contact-item a {
@@ -70,52 +171,7 @@ h1 {
   font-size: 16px;
 }
 
-/* Home Button Styles */
-.home-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: #f7da5b;
-  color: #222052;
-  border-radius: 5px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
 
-.home-button:hover {
-  background-color: #1a5a7a;
-}
-
-.home-button i {
-  font-size: 18px;
-}
-
-.resume-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px 15px;
-  background-color: #f7da5b;
-  color: #222052;
-  border-radius: 5px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #1a5a7a;
-}
-
-.resume-button i {
-  font-size: 18px;
-}
 
 .nav-buttons {
   text-align: center;
@@ -135,43 +191,12 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #e6c94d; /* Slightly darker yellow for button hover */
+  background-color: #247291;
+  color: #eef2e2; /* Slightly darker yellow for button hover */
+  text-decoration: none;
 }
-
 .fa-arrow-up, .fa-home {
   margin-right: 5px;
 }
 
-.top-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #247291;
-    padding: 10px 20px;
-    border-radius: 0 0 0 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
 
-.top-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-.top-nav li {
-    display: inline;
-}
-
-.top-nav a {
-    color: #f5f9ee;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.top-nav a:hover {
-    color: #f7da5b;
-}
