@@ -98,20 +98,10 @@ nav a:hover {
 
 footer {
     text-align: center;
-    margin-top: 40px;
     padding: 20px;
-    background-color: #f7da5b   ; /* Deep navy */
-    color: #f5f9ee; /* Off-white text */
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for footer */
     border-radius: 8px;
-}
-
-h4 {
-    color: #222052; /* Deep navy */
-    margin-bottom: 5px;
-}
-
-p {
-    color: #333;
+    margin-top: 20px;
 }
 
 footer p {
