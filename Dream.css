@@ -1,0 +1,330 @@
+body {
+    background-color: #eef2e2; /* Light background */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222052; /* Dark text color */
+    margin: 0;
+    padding: 10px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f5f9ee;
+    color: #247291;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: #f7da5b;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+.intro {
+    text-align: center;
+    margin: 40px auto 50px;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.place-card {
+    background-color: #f5f9ee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.place-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .place-content {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+.place-image {
+    flex: 1;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.place-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.place-card:hover .place-image img {
+    transform: scale(1.05);
+}
+
+.place-info {
+    flex: 1;
+    padding: 25px;
+    position: relative;
+}
+
+.place-info h2 {
+    color: #247291;
+    margin-top: 0;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.place-info h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f7da5b;
+}
+
+.place-tag {
+    display: inline-block;
+    background-color: #f7da5b;
+    color: #222052;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #247291;
+    color: #eef2e2;
+    font-size: 0.9rem;
+}
+
+.scroll-indicator {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #247291;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for footer */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #222052; /* Dark text color */
+}
+
+footer a {
+    color: #247291; /* Primary blue for footer links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+footer a:hover {
+    color: #f7da5b; /* Yellow accent for hover states */
+}
+
+footer .fab {
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .gallery {
+        width: 45%;
+    }
+}
+
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #f7da5b; /* Yellow accent for buttons */
+    color: #222052; /* Dark text color for buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.btn:hover {
+    background-color: #247291;
+    color: #eef2e2; /* Slightly darker yellow for button hover */
+    text-decoration: none;
+}
+
+.fa-arrow-up, .fa-home, .fa-arrow-right {
+    margin-right: 5px;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a7d9e; /* Darker blue for nav */
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.logo {
+    color: #f7da5b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #f5f9ee;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    font-size: 1rem; /* Consistent font size */
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f7da5b;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #f7da5b;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #1a1940;
+        width: 70%;
+        height: calc(100vh - 60px);
+        padding: 20px;
+        transition: all 0.5s ease;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    
+    /* Add this to handle the mobile menu toggle */
+    .nav-menu.active {
+        right: 0;
+    }
+}
