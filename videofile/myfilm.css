@@ -52,6 +52,79 @@ h3 {
     min-width: 320px;
     flex-grow: 1;
     transition: transform 0.3s ease, border-left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* New styles for the enhanced TV Shows section */
+.category-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #f5f9ee;
+    color: #222052;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #247291;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #247291;
+    color: #f5f9ee;
+}
+
+.category-section {
+    margin-top: 30px;
+}
+
+.category-title {
+    color: #247291;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #247291;
+}
+
+.media-poster {
+    margin-bottom: 15px;
+}
+
+.media-poster video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.media-info h4 {
+    margin-top: 0;
+    color: #222052;
+    font-size: 1.8em;
+}
+
+.show-details {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(36, 114, 145, 0.1);
+    border-radius: 5px;
+}
+
+.show-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.synopsis {
+    line-height: 1.6;
+    text-align: justify;
 }
 
 .section {
@@ -263,4 +336,20 @@ video {
     .nav-menu.active {
         right: 0;
     }
-}   
+    
+    .media-item {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .category-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .category-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+}

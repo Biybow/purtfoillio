@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="top-nav">
-        <a href="portfolio.html" class="logo">CML</a>
+        <a href="../portfolio.html" class="logo">CML</a>
         <div class="nav-menu">
           <div class="nav-item"><a href="../portfolio.html">Home</a></div>
           <div class="nav-item"><a href="../LAUGO_BIOGRAPHY_ITAD.html">Biography</a></div>
@@ -17,7 +17,8 @@
           <div class="nav-item"><a href="../resume.html">Resume</a></div>
           <div class="nav-item"><a href="../photo/PhotoGallery.html">Gallery</a></div>
           <div class="nav-item"><a href="Media.html">My Beat</a></div>
-          <div class="nav-item"><a href="MyFilm.html">My Film</a></div>
+          <div class="nav-item"><a href="fmovie.html">My Movies</a></div>
+          <div class="nav-item"><a href="MyFilm.html">My TV Shows</a></div>
           <div class="nav-item"><a href="../Dream.html">Dream Places</a></div>
           <div class="nav-item"><a href="../BucketList.html">Bucket List</a></div>
           <div class="nav-item"><a href="../contact.html">Contact</a></div>
@@ -25,7 +26,8 @@
         <div class="hamburger">
           <i class="fas fa-bars"></i>
         </div>
-      </div>
+    </div>
+    
     <header>
         <h1>My Film Collection</h1>
         <p>A showcase of my favorite shows and movies</p>
@@ -39,57 +41,241 @@
         <!-- TV Shows Category -->
         <h3>TV Shows</h3>
         <p>These series have captivated me with their complex characters and compelling narratives.</p>
-        <div class="media-container">
-            <div class="media-item">
-                <video controls width="320" height="240">
-                    <source src="Barry Runs To Gotham City - The Flash (2023) (HD) Opening Scene.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h4>The Flash</h4>
-                <p>The Flash is an American superhero television series developed by Greg Berlanti, Andrew Kreisberg, and Geoff Johns, airing on The CW. It is based on the Barry Allen incarnation of DC Comics character the Flash, a costumed superhero crime-fighter with the power to move at superhuman speeds.</p>
-            </div>
-            
-            <div class="media-item">
-                <video controls width="320" height="240">
-                    <source src="Stranger Things 4 _ Volume 2 Trailer _ Netflix.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h4>Stranger Things</h4>
-                <p>Stranger Things is an American television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016.</p>
-            </div>
+        
+        <!-- TV Shows Categories Navigation -->
+        <div class="category-nav">
+            <a href="#action" class="category-btn active">Action</a>
+            <a href="#drama" class="category-btn">Drama</a>
+            <a href="#kdrama" class="category-btn">K-Drama</a>
+            <a href="#scifi" class="category-btn">Sci-Fi</a>
+            <a href="#romance" class="category-btn">Romance</a>
         </div>
         
-        <!-- Movies Category -->
-        <h3>Movies</h3>
-        <p>These films have left an indelible mark on my appreciation for cinematic storytelling.</p>
-        <div class="media-container">
-            <div class="media-item">
-                <video controls width="320" height="240">
-                    <source src="venum.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h4>Venom: The Last Dance</h4>
-                <p>Venom: The Last Dance is a 2024 American superhero film written and directed by Kelly Marcel, which features the Marvel Comics character Venom. A sequel to Venom: Let There Be Carnage, it is the fifth film in Sony's Spider-Man Universe (SSU) and the third film in the Venom trilogy.</p>
-            </div>
-            
-            <div class="media-item">
-                <video controls width="320" height="240">
-                    <source src="Army of Thieves _ Official Trailer _ Netflix.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <h4>Army of Thieves</h4>
-                <p>Army of Thieves is a 2021 heist comedy film directed by Matthias Schweighöfer from a screenplay by Shay Hatten, based on a story he wrote with Zack Snyder.</p>
+        <!-- Action TV Shows -->
+        <div id="action" class="category-section">
+            <h4 class="category-title">Action</h4>
+            <div class="media-container">
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Barry Runs To Gotham City - The Flash (2023) (HD) Opening Scene.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>The Flash</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> Greg Berlanti, Andrew Kreisberg, Geoff Johns</p>
+                            <p><strong>Stars:</strong> Grant Gustin, Candice Patton, Danielle Panabaker</p>
+                            <p><strong>Network:</strong> The CW</p>
+                            <p><strong>Years:</strong> 2014-2023</p>
+                        </div>
+                        <p class="synopsis">The Flash is an American superhero television series based on the Barry Allen incarnation of DC Comics character the Flash, a costumed superhero crime-fighter with the power to move at superhuman speeds. After being struck by lightning, Barry Allen awakens from his coma to discover he's been given the power of super speed, becoming the next Flash, fighting crime in Central City.</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Marvel Television's Daredevil_ Born Again _ Official Trailer _ Disney+.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Daredevil</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> Drew Goddard</p>
+                            <p><strong>Stars:</strong> Charlie Cox, Vincent D'Onofrio, Deborah Ann Woll</p>
+                            <p><strong>Network:</strong> Netflix</p>
+                            <p><strong>Years:</strong> 2015-2018</p>
+                        </div>
+                        <p class="synopsis">A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil, a hero with heightened senses who delivers his own brand of justice in Hell's Kitchen. The series is known for its gritty tone and exceptional fight choreography.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="nav-buttons">
-            <a href="Media.html" class="btn"><i class="fa-solid fa-arrow-left       "></i> My Beat</a>
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="#drama" class="btn"><i class="fa-solid fa-arrow-down"></i> Next</a>
+        </div>
+        
+        <!-- Drama TV Shows -->
+        <div id="drama" class="category-section">
+            <h4 class="category-title">Drama</h4>
+            <div class="media-container">
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="El Camino_ A Breaking Bad Movie _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Breaking Bad</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> Vince Gilligan</p>
+                            <p><strong>Stars:</strong> Bryan Cranston, Aaron Paul, Anna Gunn</p>
+                            <p><strong>Network:</strong> AMC</p>
+                            <p><strong>Years:</strong> 2008-2013</p>
+                        </div>
+                        <p class="synopsis">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. Breaking Bad follows Walter White's transformation from a mild-mannered teacher to a fearsome drug kingpin.</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Stranger Things 4 _ Volume 2 Trailer _ Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Stranger Things</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> The Duffer Brothers</p>
+                            <p><strong>Stars:</strong> Millie Bobby Brown, Finn Wolfhard, Winona Ryder</p>
+                            <p><strong>Network:</strong> Netflix</p>
+                            <p><strong>Years:</strong> 2016-Present</p>
+                        </div>
+                        <p class="synopsis">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl. Set in the 1980s, the series combines supernatural elements with nostalgic references to pop culture of the era.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="#kdrama" class="btn"><i class="fa-solid fa-arrow-down"></i> Next</a>
+        </div>
+        
+        <!-- K-Drama TV Shows -->
+        <div id="kdrama" class="category-section">
+            <h4 class="category-title">K-Drama</h4>
+            <div class="media-container">
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Crash Landing on You _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Crash Landing on You</h4>
+                        <div class="show-details">
+                            <p><strong>Director:</strong> Lee Jeong-hyo</p>
+                            <p><strong>Stars:</strong> Hyun Bin, Son Ye-jin, Seo Ji-hye</p>
+                            <p><strong>Network:</strong> tvN, Netflix</p>
+                            <p><strong>Years:</strong> 2019-2020</p>
+                        </div>
+                        <p class="synopsis">A South Korean heiress accidentally crash-lands in North Korea while paragliding. There, she meets a North Korean officer who decides to help her hide. This romantic drama explores themes of love that transcends political boundaries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="#scifi" class="btn"><i class="fa-solid fa-arrow-down"></i> Next</a>
+        </div>
+        
+        <!-- Sci-Fi TV Shows -->
+        <div id="scifi" class="category-section">
+            <h4 class="category-title">Sci-Fi</h4>
+            <div class="media-container">
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Black Mirror_ Rachel, Jack and Ashley Too _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Black Mirror</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> Charlie Brooker</p>
+                            <p><strong>Stars:</strong> Various (Anthology series)</p>
+                            <p><strong>Network:</strong> Channel 4, Netflix</p>
+                            <p><strong>Years:</strong> 2011-Present</p>
+                        </div>
+                        <p class="synopsis">An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide. Each episode presents a standalone story with unique characters and settings, examining modern society through the lens of technology.</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Westworld Season 1 - Official Trailer - HBO UK.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Westworld</h4>
+                        <div class="show-details">
+                            <p><strong>Creators:</strong> Jonathan Nolan, Lisa Joy</p>
+                            <p><strong>Stars:</strong> Evan Rachel Wood, Jeffrey Wright, Ed Harris</p>
+                            <p><strong>Network:</strong> HBO</p>
+                            <p><strong>Years:</strong> 2016-2022</p>
+                        </div>
+                        <p class="synopsis">A dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite can be indulged without consequence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="#romance" class="btn"><i class="fa-solid fa-arrow-down"></i> Next</a>
+        </div>
+        
+        <!-- Romance TV Shows -->
+        <div id="romance" class="category-section">
+            <h4 class="category-title">Romance</h4>
+            <div class="media-container">
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Bridgerton _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Bridgerton</h4>
+                        <div class="show-details">
+                            <p><strong>Creator:</strong> Chris Van Dusen</p>
+                            <p><strong>Stars:</strong> Regé-Jean Page, Phoebe Dynevor, Jonathan Bailey</p>
+                            <p><strong>Network:</strong> Netflix</p>
+                            <p><strong>Years:</strong> 2020-Present</p>
+                        </div>
+                        <p class="synopsis">Set in the glamorous world of Regency London high society, this series follows the eight close-knit siblings of the powerful Bridgerton family as they attempt to find love. Each season focuses on a different sibling's romantic journey.</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-poster">
+                        <video controls>
+                            <source src="Normal People Trailer (Official) _ Hulu.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="media-info">
+                        <h4>Normal People</h4>
+                        <div class="show-details">
+                            <p><strong>Directors:</strong> Lenny Abrahamson, Hettie Macdonald</p>
+                            <p><strong>Stars:</strong> Daisy Edgar-Jones, Paul Mescal</p>
+                            <p><strong>Network:</strong> Hulu, BBC Three</p>
+                            <p><strong>Years:</strong> 2020</p>
+                        </div>
+                        <p class="synopsis">Follows the relationship between Marianne and Connell from their school days in a small town in Ireland to their undergraduate years at Trinity College. A beautiful and intimate portrayal of young love and the complexities of human relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="fmovie.html" class="btn"><i class="fa-solid fa-arrow-left"></i> My Movie</a>
             <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
             <a href="../portfolio.html" class="btn"><i class="fas fa-home"></i> Home</a>
             <a href="../Dream.html" class="btn"><i class="fa-solid fa-arrow-right"></i> Places to Visit</a>
         </div>
     </section>
     
-    <<footer>
+  <footer>
         <footer>
             <p><b>By: Cyril Marius M. Laugo</b></p>
             <p>Contact me at: <a href="mailto:Laugo.cyrilmarius@ue.edu.ph">Laugo.cyrilmarius@ue.edu.ph</a></p>
@@ -102,6 +288,5 @@
             </p>
         </footer>
     </footer>
-
 </body>
 </html>
