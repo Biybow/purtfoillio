@@ -135,12 +135,17 @@ a:hover {
 
 .gallery:hover {
     transform: scale(1.05);
+
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     display: block;
+    opacity: 0.5;
+}
+.gallery img:hover {
+    opacity: 1;
 }
 
 .gallery .description {

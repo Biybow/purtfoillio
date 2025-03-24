@@ -89,13 +89,13 @@ header {
   .progress {
     height: 100%;
     background-color: var(--navy-blue);
-    width: 60%;
+    width: 30%;
     border-radius: 0.75rem;
     position: relative;
   }
   
   .progress::after {
-    content: "60%";
+    content: "30%";
     position: absolute;
     right: 10px;
     color: var(--yellow);
@@ -296,4 +296,11 @@ footer .fab {
     .nav-menu.active {
         right: 0;
     }
+}
+
+.card-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
