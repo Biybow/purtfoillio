@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kyoto: A Cultural Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #eef2e2;
+            color: #222052;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f5f9ee;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #247291;
+            border-bottom: 3px solid #f7da5b;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f7da5b;
+            color: #222052;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #247291;
+            color: #eef2e2;
+        }
+        .back-button i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kyoto, Japan</h1>
+        <p>Ancient temples, peaceful bamboo groves, and traditional tea ceremonies await in this city where Japan's spiritual and cultural heart beats strongest. Walking through the torii gates of Fushimi Inari shrine at sunset is an experience that transcends time.</p>
+        
+        <div class="image-gallery">
+            <img src="../japan.jpg" alt="Fushimi Inari Shrine" />
+            <img src="Kyoto.jpg" alt="Bamboo Grove" />
+            <img src="images.jpg" alt="Traditional Tea Ceremony" />
+        </div>
+
+        <a href="../Dream.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>Back to Previous Page
+        </a>
+    </div>
+</body>
+</html>

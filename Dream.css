@@ -328,3 +328,38 @@ footer .fab {
         right: 0;
     }
 }
+
+/* Add styles for map container and points */
+.map-container {
+    position: relative;
+    margin: 40px auto;
+    max-width: 900px; /* Adjust as needed */
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f7da5b;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 5px rgba(247, 218, 91, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-point:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 8px rgba(247, 218, 91, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

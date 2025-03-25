@@ -45,6 +45,23 @@
             </svg>
         </div>
         
+        
+        <div class="map-container">
+            <div id = "coordinates">
+                <img src="collage.png" usemap="#image-map">
+
+                <map name="image-map">
+                    <area target="" alt="Greece" title="Greece" href="maps/Greece.html" coords="58,82,91,249,265,222,274,290,317,283,317,110,301,34,194,56" shape="poly">
+                    <area target="" alt="Iceland" title="Iceland" href="maps/iceland.html" coords="325,47,582,398" shape="rect">
+                    <area target="" alt="New Zealand" title="New Zealand" href="maps/newZ.html" coords="745,140,149" shape="circle">
+                    <area target="" alt="Patagonia" title="Patagonia" href="maps/Patagonia.html" coords="734,469,159" shape="circle">
+                    <area target="" alt="Kyoto" title="Kyoto" href="maps/kyoto.html" coords="303,429,329,583,233,609,232,689,558,689,556,435" shape="poly">
+                    <area target="" alt="Palawan" title="Palawan" href="maps/elNido.html" coords="22,268,267,593" shape="rect">
+                </map>
+            </div>
+        </div>
+
+
         <div class="destinations">
             <!-- Kyoto -->
             <div class="place-card" id="kyoto">
@@ -126,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="place-card" id="new-zealand">
+            <div class="place-card" id="elnido">
                 <div class="place-content">
                     <div class="place-image">
                         <a href="Nido.jpeg" target="display">
@@ -164,5 +181,15 @@
             </p>
         </footer>
     </footer>
+    <script>
+        // Optional JavaScript to show coordinates when an area is clicked
+        document.querySelector('map').addEventListener('click', function(e) {
+            if (e.target.tagName === 'AREA') {
+                document.getElementById('coordinates').innerHTML = 
+                    `<h2>Location Details</h2>
+                    <p><strong>${e.target.alt}:</strong> ${e.target.title.split(' ')[1]}</p>`;
+            }
+        });
+    </script>
 </body>
 </html>
