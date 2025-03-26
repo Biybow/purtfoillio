@@ -2,86 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LAND OF FIRE & ICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iceland: A Realm of Elemental Wonders</title>
+    <link rel="stylesheet" href="PChile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #eef2e2;
-            color: #222052;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            background-color: #f5f9ee;
-            max-width: 700px;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #247291;
-            border-bottom: 3px solid #f7da5b;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .image-gallery img {
-            width: 30%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .image-gallery img:hover {
-            transform: scale(1.05);
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #f7da5b;
-            color: #222052;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #247291;
-            color: #eef2e2;
-        }
-        .back-button i {
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Iceland</h1>
-        <p>Where else can you witness a geyser eruption, walk between tectonic plates, bathe in geothermal springs, and chase the Northern Lights—all in a single day? Iceland's otherworldly landscapes feel like visiting another planet.</p>
-        
-        <div class="image-gallery">
-            <img src="../Iceland.jpg" alt="Fushimi Inari Shrine" />
-            <img src="ilaw.jpg" alt="Bamboo Grove" />
-            <img src="wow.jpg" alt="Traditional Tea Ceremony" />
+    <div class="top-nav">
+        <a href="portfolio.html" class="logo">CML</a>
+        <div class="nav-menu">
+            <div class="nav-item"><a href="../portfolio.html">Home</a></div>
+            <div class="nav-item"><a href="../LAUGO_BIOGRAPHY_ITAD.html">Biography</a></div>
+            <div class="nav-item"><a href="../LAUGO_ITAD_SKILLS.html">Skills</a></div>
+            <div class="nav-item"><a href="../resume.html">Resume</a></div>
+            <div class="nav-item"><a href="../photo/PhotoGallery.html">Gallery</a></div>
+            <div class="nav-item"><a href="../videofile/Media.html">My Beat</a></div>
+            <div class="nav-item"><a href="../videofile/fmovie.html">My Movies</a></div>
+            <div class="nav-item"><a href="../videofile/MyFilm.html">My TV Shows</a></div>
+            <div class="nav-item"><a href="../Dream.html">Dream Places</a></div>
+            <div class="nav-item"><a href="../BucketList.html">Bucket List</a></div>
+            <div class="nav-item"><a href="../contact.html">Contact</a></div>
         </div>
-
-        <a href="../Dream.html" class="back-button">
-            <i class="fas fa-arrow-left"></i>Back to Previous Page
-        </a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
+
+    <main class="container">
+        <nav class="section-nav">
+            <ul>
+                <li><a href="Greece.html">Greece</a></li>
+                <li><a href="iceland.html">Iceland</a></li>
+                <li><a href="newZ.html">New Zealand</a></li>
+                <li><a href="Patagonia.html">Patagonia</a></li>
+                <li><a href="kyoto.html">Kyoto Japan</a></li>
+                <li><a href="elNido.html">El Nido</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>Iceland: A Realm of Elemental Wonders</h1>
+            <p class="hero-description">A landscape of breathtaking contrasts, where volcanic fire meets glacial ice, creating a world of extraordinary natural beauty and primal wonder.</p>
+        </section>
+
+        <section class="image-gallery">
+            <a href="../Iceland.jpg" target="display" class="gallery-item">
+                <img src="../Iceland.jpg" alt="Golden Circle" title="Iceland Landscape"/>
+            </a>
+            <a href="wow.jpg" target="display" class="gallery-item">
+                <img src="wow.jpg" alt="Blue Lagoon" title="Iceland Scenery"/>
+            </a>
+            <a href="ilaw.jpg" target="display" class="gallery-item">
+                <img src="ilaw.jpg" alt="Northern Lights" title="Iceland Northern Lights"/>
+            </a>
+        </section>
+
+        <section class="content">
+            <h2>Iconic Landscapes of Iceland</h2>
+            <div class="landscape-description">
+                <p>Iceland is a landscape of breathtaking contrasts, where volcanic fire meets glacial ice, creating a world unlike any other:</p>
+                <ul>
+                    <li><strong>Golden Circle</strong>: A route featuring explosive geysers, thundering waterfalls, and tectonic plate boundaries</li>
+                    <li><strong>Blue Lagoon</strong>: Ethereal geothermal spa with milky-blue waters surrounded by black lava fields</li>
+                    <li><strong>Vatnajökull National Park</strong>: Europe's largest glacier, with massive ice caps and volcanic terrain</li>
+                    <li><strong>Reynisfjara Black Sand Beach</strong>: Dramatic black volcanic beaches with towering basalt columns</li>
+                    <li><strong>Northern Lights</strong>: Celestial dance of green, purple, and blue lights across the night sky</li>
+                    <li><strong>Jökulsárlón Glacier Lagoon</strong>: A surreal landscape of floating blue-white icebergs</li>
+                </ul>
+            </div>
+
+            <div class="landscape-highlights">
+                <div class="highlight">
+                    <h3>Why Iceland is Special</h3>
+                    <p>A living testament to the raw power of nature, Iceland captivates with its unique geological activity and otherworldly landscapes.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Natural Phenomena</h3>
+                    <p>Experience incredible light phenomena - from midnight sun in summer to northern lights in winter - that transform the landscape.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Cultural Essence</h3>
+                    <p>A culture of resilience and deep connection to the natural world, where each moment feels like a privileged glimpse into the planet's primal processes.</p>
+                </div>
+            </div>
+
+            <div class="travel-info">
+                <div class="travel-section">
+                    <h3>How to Get There</h3>
+                    <ul>
+                        <li><strong>Main Airport:</strong> Keflavík International Airport (KEF)</li>
+                        <li><strong>Location:</strong> 45 minutes from Reykjavík</li>
+                        <li><strong>Best Seasons:</strong> Summer, Winter, and Shoulder Seasons</li>
+                    </ul>
+                </div>
+                <div class="travel-section">
+                    <h3>Best Time to Visit</h3>
+                    <ul>
+                        <li><strong>Summer (June-August):</strong> Midnight sun, most accessible roads</li>
+                        <li><strong>Winter (November-March):</strong> Northern Lights, fewer tourists</li>
+                        <li><strong>Shoulder Seasons:</strong> Moderate weather, fewer crowds</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="must-do-experiences">
+                <h3>Unique Experiences</h3>
+                <ol>
+                    <li>Bathe in natural hot springs</li>
+                    <li>Chase the Northern Lights</li>
+                    <li>Drive the Ring Road</li>
+                    <li>Take a glacier tour</li>
+                    <li>Explore volcanic landscapes</li>
+                    <li>Experience midnight sun</li>
+                </ol>
+                <p><strong>Estimated Budget</strong>: $250-$500 per day (including accommodation, food, activities, and transportation)</p>
+            </div>
+
+            <blockquote>
+                <p><em>Iceland is not just a destination - it's a journey through the very heart of our planet's most extraordinary landscapes.</em></p>
+            </blockquote>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="../portfolio.html" class="btn"><i class="fas fa-home"></i> Home</a>
+            <a href="../Dream.html" class="btn"><i class="fas fa-arrow-left"></i> Dream</a>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>By: Cyril Marius M. Laugo</b></p>
+        <p>Contact me at: <a href="mailto:Laugo.cyrilmarius@ue.edu.ph">Laugo.cyrilmarius@ue.edu.ph</a></p>
+        <p>Follow me on:
+            <a href="https://facebook.com/cyrilmarius.laugo" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/_Bukayo_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/worst.biybowww" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/biyboww" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/cyril-marius-laugo-825026356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Close mobile menu when a nav link is clicked
+            const navLinks = document.querySelectorAll('.nav-item a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

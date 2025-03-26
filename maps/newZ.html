@@ -2,86 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ADVENTURE WONDERLAND</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Zealand: Nature's Masterpiece at the Edge of the World</title>
+    <link rel="stylesheet" href="PChile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #eef2e2;
-            color: #222052;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            background-color: #f5f9ee;
-            max-width: 700px;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #247291;
-            border-bottom: 3px solid #f7da5b;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .image-gallery img {
-            width: 30%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .image-gallery img:hover {
-            transform: scale(1.05);
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #f7da5b;
-            color: #222052;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #247291;
-            color: #eef2e2;
-        }
-        .back-button i {
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>New Zealand</h1>
-        <p>From misty fjords to rolling green hills, this island nation packs every landscape imaginable into its compact borders. Whether seeking adrenaline in Queenstown or tranquility in Milford Sound, New Zealand's natural diversity is unmatched.</p>
-        
-        <div class="image-gallery">
-            <img src="../Iceland.jpg" alt="Fushimi Inari Shrine" />
-            <img src="Lupins.jpg" alt="Bamboo Grove" />
-            <img src="32.jpg" alt="Traditional Tea Ceremony" />
+    <div class="top-nav">
+        <a href="portfolio.html" class="logo">CML</a>
+        <div class="nav-menu">
+            <div class="nav-item"><a href="../portfolio.html">Home</a></div>
+            <div class="nav-item"><a href="../LAUGO_BIOGRAPHY_ITAD.html">Biography</a></div>
+            <div class="nav-item"><a href="../LAUGO_ITAD_SKILLS.html">Skills</a></div>
+            <div class="nav-item"><a href="../resume.html">Resume</a></div>
+            <div class="nav-item"><a href="../photo/PhotoGallery.html">Gallery</a></div>
+            <div class="nav-item"><a href="../videofile/Media.html">My Beat</a></div>
+            <div class="nav-item"><a href="../videofile/fmovie.html">My Movies</a></div>
+            <div class="nav-item"><a href="../videofile/MyFilm.html">My TV Shows</a></div>
+            <div class="nav-item"><a href="../Dream.html">Dream Places</a></div>
+            <div class="nav-item"><a href="../BucketList.html">Bucket List</a></div>
+            <div class="nav-item"><a href="../contact.html">Contact</a></div>
         </div>
-
-        <a href="../Dream.html" class="back-button">
-            <i class="fas fa-arrow-left"></i>Back to Previous Page
-        </a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
+
+    <main class="container">
+        <nav class="section-nav">
+            <ul>
+                <li><a href="Greece.html">Greece</a></li>
+                <li><a href="iceland.html">Iceland</a></li>
+                <li><a href="newZ.html">New Zealand</a></li>
+                <li><a href="Patagonia.html">Patagonia</a></li>
+                <li><a href="kyoto.html">Kyoto Japan</a></li>
+                <li><a href="elNido.html">El Nido</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>New Zealand: Nature's Masterpiece at the Edge of the World</h1>
+            <p class="hero-description">A stunning canvas of diverse landscapes that seem almost otherworldly, offering an unparalleled blend of natural wonders and breathtaking beauty.</p>
+        </section>
+
+        <section class="image-gallery">
+            <a href="Lupins.jpg" target="display" class="gallery-item">
+                <img src="Lupins.jpg" alt="Milford Sound" title="New Zealand Landscape"/>
+            </a>
+            <a href="32.jpg" target="display" class="gallery-item">
+                <img src="32.jpg" alt="Tongariro Alpine Crossing" title="New Zealand Scenery"/>
+            </a>
+            <a href="large.jpg" target="display" class="gallery-item">
+                <img src="large.jpg" alt="Bay of Islands" title="New Zealand Coastline"/>
+            </a>
+        </section>
+
+        <section class="content">
+            <h2>Iconic Landscapes of New Zealand</h2>
+            <div class="landscape-description">
+                <p>New Zealand is a stunning canvas of diverse landscapes that seem almost otherworldly, offering an unparalleled blend of natural wonders:</p>
+                <ul>
+                    <li><strong>Milford Sound</strong>: A dramatic fjord in Fiordland National Park, with sheer rock faces plunging into deep blue waters</li>
+                    <li><strong>Tongariro Alpine Crossing</strong>: A volcanic landscape of emerald lakes and stark volcanic terrain</li>
+                    <li><strong>Bay of Islands</strong>: A subtropical paradise with turquoise waters and 144 islands</li>
+                    <li><strong>Mount Cook National Park</strong>: Towering alpine peaks and glacial valleys</li>
+                    <li><strong>Hobbiton</strong>: The magical movie set that brings Middle-earth to life</li>
+                    <li><strong>Rotorua</strong>: Geothermal wonderland with bubbling mud pools and steaming geysers</li>
+                </ul>
+            </div>
+
+            <div class="landscape-highlights">
+                <div class="highlight">
+                    <h3>Why New Zealand is Special</h3>
+                    <p>A land that defies imagination - where nature's most spectacular features come together in perfect harmony.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Natural Diversity</h3>
+                    <p>Unprecedented natural diversity packed into a relatively small area, with unique wildlife found nowhere else on Earth.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Cultural Essence</h3>
+                    <p>A perfect balance of adventure and tranquility, showcasing the warm, welcoming culture of the Kiwi people.</p>
+                </div>
+            </div>
+
+            <div class="travel-info">
+                <div class="travel-section">
+                    <h3>How to Get There</h3>
+                    <ul>
+                        <li><strong>Main International Airports:</strong></li>
+                        <li>Auckland Airport (AKL)</li>
+                        <li>Wellington International Airport (WLG)</li>
+                        <li>Christchurch International Airport (CHC)</li>
+                    </ul>
+                </div>
+                <div class="travel-section">
+                    <h3>Best Time to Visit</h3>
+                    <ul>
+                        <li><strong>Summer (December-February):</strong> Warmest, peak tourist season</li>
+                        <li><strong>Shoulder Seasons (March-May, September-November):</strong> Mild weather, fewer crowds</li>
+                        <li><strong>Winter (June-August):</strong> Ideal for skiing, less crowded</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="must-do-experiences">
+                <h3>Essential Experiences</h3>
+                <ol>
+                    <li>Hiking (known locally as "tramping")</li>
+                    <li>Maori cultural tours</li>
+                    <li>Bungee jumping in Queenstown</li>
+                    <li>Whale watching in Kaikoura</li>
+                    <li>Wine tasting in Marlborough</li>
+                    <li>Exploring Lord of the Rings film locations</li>
+                </ol>
+                <p><strong>Estimated Budget</strong>: $150-$300 per day (including accommodation, food, activities, and transportation)</p>
+            </div>
+
+            <blockquote>
+                <p><em>New Zealand is not just a destination - it's an epic journey through nature's most incredible canvas.</em></p>
+            </blockquote>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="../portfolio.html" class="btn"><i class="fas fa-home"></i> Home</a>
+            <a href="../Dream.html" class="btn"><i class="fas fa-arrow-left"></i> Dream</a>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>By: Cyril Marius M. Laugo</b></p>
+        <p>Contact me at: <a href="mailto:Laugo.cyrilmarius@ue.edu.ph">Laugo.cyrilmarius@ue.edu.ph</a></p>
+        <p>Follow me on:
+            <a href="https://facebook.com/cyrilmarius.laugo" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/_Bukayo_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/worst.biybowww" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/biyboww" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/cyril-marius-laugo-825026356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Close mobile menu when a nav link is clicked
+            const navLinks = document.querySelectorAll('.nav-item a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

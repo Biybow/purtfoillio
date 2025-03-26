@@ -2,86 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kyoto: A Cultural Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto: Where Tradition Meets Tranquility</title>
+    <link rel="stylesheet" href="PChile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #eef2e2;
-            color: #222052;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            background-color: #f5f9ee;
-            max-width: 700px;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #247291;
-            border-bottom: 3px solid #f7da5b;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .image-gallery {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .image-gallery img {
-            width: 30%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(36, 114, 145, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .image-gallery img:hover {
-            transform: scale(1.05);
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #f7da5b;
-            color: #222052;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #247291;
-            color: #eef2e2;
-        }
-        .back-button i {
-            margin-right: 10px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Kyoto, Japan</h1>
-        <p>Ancient temples, peaceful bamboo groves, and traditional tea ceremonies await in this city where Japan's spiritual and cultural heart beats strongest. Walking through the torii gates of Fushimi Inari shrine at sunset is an experience that transcends time.</p>
-        
-        <div class="image-gallery">
-            <img src="../japan.jpg" alt="Fushimi Inari Shrine" />
-            <img src="Kyoto.jpg" alt="Bamboo Grove" />
-            <img src="images.jpg" alt="Traditional Tea Ceremony" />
+    <div class="top-nav">
+        <a href="portfolio.html" class="logo">CML</a>
+        <div class="nav-menu">
+            <div class="nav-item"><a href="../portfolio.html">Home</a></div>
+            <div class="nav-item"><a href="../LAUGO_BIOGRAPHY_ITAD.html">Biography</a></div>
+            <div class="nav-item"><a href="../LAUGO_ITAD_SKILLS.html">Skills</a></div>
+            <div class="nav-item"><a href="../resume.html">Resume</a></div>
+            <div class="nav-item"><a href="../photo/PhotoGallery.html">Gallery</a></div>
+            <div class="nav-item"><a href="../videofile/Media.html">My Beat</a></div>
+            <div class="nav-item"><a href="../videofile/fmovie.html">My Movies</a></div>
+            <div class="nav-item"><a href="../videofile/MyFilm.html">My TV Shows</a></div>
+            <div class="nav-item"><a href="../Dream.html">Dream Places</a></div>
+            <div class="nav-item"><a href="../BucketList.html">Bucket List</a></div>
+            <div class="nav-item"><a href="../contact.html">Contact</a></div>
         </div>
-
-        <a href="../Dream.html" class="back-button">
-            <i class="fas fa-arrow-left"></i>Back to Previous Page
-        </a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
+
+    <main class="container">
+        <nav class="section-nav">
+            <ul>
+                <li><a href="Greece.html">Greece</a></li>
+                <li><a href="iceland.html">Iceland</a></li>
+                <li><a href="newZ.html">New Zealand</a></li>
+                <li><a href="Patagonia.html">Patagonia</a></li>
+                <li><a href="kyoto.html">Kyoto Japan</a></li>
+                <li><a href="elNido.html">El Nido</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <h1>Kyoto: Where Tradition Meets Tranquility</h1>
+            <p class="hero-description">A mesmerizing tapestry of natural beauty and architectural wonder, where every landscape tells a story of centuries past, and ancient traditions breathe alongside modern life.</p>
+        </section>
+
+        <section class="image-gallery">
+            <a href="Kyoto.jpg" target="display" class="gallery-item">
+                <img src="Kyoto.jpg" alt="Arashiyama Bamboo Grove" title="kyoto"/>
+            </a>
+            <a href="../japan.jpg" target="display" class="gallery-item">
+                <img src="../japan.jpg" alt="Fushimi Inari Shrine" title="kyoto"/>
+            </a>
+            <a href="images.jpg" target="display" class="gallery-item">
+                <img src="images.jpg" alt="Kinkaku-ji Golden Pavilion" title="kyoto"/>
+            </a>
+        </section>
+
+        <section class="content">
+            <h2>Iconic Landscapes of Kyoto</h2>
+            <div class="landscape-description">
+                <p>Kyoto is a living museum of Japanese culture, where every corner reveals a unique story:</p>
+                <ul>
+                    <li><strong>Arashiyama Bamboo Grove</strong>: A mystical forest of towering green bamboo creating a natural cathedral of light and shadow</li>
+                    <li><strong>Philosopher's Path</strong>: A cherry-tree-lined canal walk that transforms with seasonal colors</li>
+                    <li><strong>Fushimi Inari Shrine</strong>: Thousands of vermilion torii gates climbing up a mountain, creating a surreal passage</li>
+                    <li><strong>Kinkaku-ji (Golden Pavilion)</strong>: A zen temple covered in gold leaf, seemingly floating on a mirror-like pond</li>
+                    <li><strong>Gion District</strong>: Traditional wooden machiya houses and narrow streets that transport you back in time</li>
+                </ul>
+            </div>
+
+            <div class="landscape-highlights">
+                <div class="highlight">
+                    <h3>Why Kyoto is Special</h3>
+                    <p>Kyoto is the soul of Japan - a delicate balance of respect for history, appreciation of beauty, and mindful simplicity.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Cultural Essence</h3>
+                    <p>A living testament to traditions that have survived for centuries, where every season tells a different artistic story.</p>
+                </div>
+                <div class="highlight">
+                    <h3>Seasonal Beauty</h3>
+                    <p>From delicate spring cherry blossoms to autumn's crimson maple leaves, Kyoto is a canvas of natural wonder.</p>
+                </div>
+            </div>
+
+            <div class="travel-info">
+                <div class="travel-section">
+                    <h3>How to Get There</h3>
+                    <ul>
+                        <li><strong>Nearest Airport:</strong> Kansai International Airport (KIX)</li>
+                        <li><strong>Airport Transfer:</strong> Direct train to Kyoto Station (75 minutes)</li>
+                        <li><strong>Alternative:</strong> Airport limousine bus (90 minutes)</li>
+                    </ul>
+                </div>
+                <div class="travel-section">
+                    <h3>Best Time to Visit</h3>
+                    <ul>
+                        <li><strong>Spring (March-May):</strong> Cherry Blossom Season</li>
+                        <li><strong>Autumn (October-November):</strong> Fall Foliage</li>
+                        <li><strong>Avoid:</strong> Summer's humidity and winter's cold</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="must-do-experiences">
+                <h3>Cultural Experiences</h3>
+                <ol>
+                    <li>Participate in a traditional tea ceremony</li>
+                    <li>Stay in a traditional ryokan (Japanese inn)</li>
+                    <li>Watch a geisha performance in Gion</li>
+                    <li>Visit during a traditional festival</li>
+                    <li>Try a zen meditation session</li>
+                </ol>
+                <p><strong>Estimated Budget</strong>: $150-$300 per day (excluding accommodation)</p>
+            </div>
+
+            <blockquote>
+                <p><em>Kyoto is not just a destination; it's a meditation on beauty, history, and the art of living.</em></p>
+            </blockquote>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <a href="../portfolio.html" class="btn"><i class="fas fa-home"></i> Home</a>
+            <a href="../Dream.html" class="btn"><i class="fas fa-arrow-left"></i> Dream</a>
+        </div>
+    </main>
+
+    <footer>
+        <p><b>By: Cyril Marius M. Laugo</b></p>
+        <p>Contact me at: <a href="mailto:Laugo.cyrilmarius@ue.edu.ph">Laugo.cyrilmarius@ue.edu.ph</a></p>
+        <p>Follow me on:
+            <a href="https://facebook.com/cyrilmarius.laugo" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/_Bukayo_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/worst.biybowww" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.behance.net/biyboww" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/cyril-marius-laugo-825026356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            // Close mobile menu when a nav link is clicked
+            const navLinks = document.querySelectorAll('.nav-item a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
