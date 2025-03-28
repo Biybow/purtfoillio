@@ -363,3 +363,31 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #f5f9ee;
+    color: #222052;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #247291;
+}
+
+.category-btn:hover, .category-btn.active {
+    background-color: #247291;
+    color: #f5f9ee;
+}
+
+.category-section {
+    margin-top: 30px;
+}
+
+.category-title {
+    color: #247291;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #247291;
+}
