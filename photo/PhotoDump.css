@@ -147,8 +147,8 @@ footer .fab {
   display: inline-block;
   margin: 5px;
   padding: 10px 20px;
-  background-color: #f7da5b; /* Yellow accent for buttons */
-  color: #222052; /* Dark text color for buttons */
+  background-color: #247291; /* Yellow accent for buttons */
+  color: #eef2e2; /* Dark text color for buttons */
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -156,8 +156,8 @@ footer .fab {
 }
 
 .btn:hover {
-  background-color: #247291;
-  color: #eef2e2; /* Slightly darker yellow for button hover */
+  background-color: #f7da5b;
+  color: #222052; /* Slightly darker yellow for button hover */
   text-decoration: none;
 }
 .fa-arrow-up, .fa-home {
