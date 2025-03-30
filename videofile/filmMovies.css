@@ -1,7 +1,7 @@
 body {
-    background-color: #eef2e2;
+    background-color: #eef2e2; /* Dark background for film section */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222052;
+    color: #222052; /* Light text for dark background */
     margin: 0;
     padding: 10px;
     line-height: 1.6;
@@ -9,14 +9,13 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 0;
-    background-color: #f5f9ee;
-    color: #247291;
+    padding: 70px 0; /* Increase padding */
+    background-color: #f5f9ee; /* Darker background for header */
+    color: #247291; /* Light text */
     border-radius: 8px;
-    margin-bottom: 100px;
-    margin-top: 70px; /* Added to account for fixed navbar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
 }
+
 
 h1 {
     margin: 0;

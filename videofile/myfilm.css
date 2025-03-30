@@ -9,11 +9,10 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 0; /* Increase padding */
+    padding: 70px 0; /* Increase padding */
     background-color: #f5f9ee; /* Darker background for header */
     color: #247291; /* Light text */
     border-radius: 8px;
-    margin-bottom: 100px; /* Increase margin-bottom slightly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
 }
 

@@ -13,27 +13,29 @@
   }
   
   body {
-    background-color: #eef2e2; /* Light background */
+    background-color: #eef2e2; /* Dark background for film section */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #222052; /* Dark text color */
+    color: #222052; /* Light text for dark background */
     margin: 0;
     padding: 10px;
     line-height: 1.6;
 }
-  
+
 header {
-    background-color: #f5f9ee;
-    color: #247291;
-    padding: 70px 0;
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    padding: 70px 0; /* Increase padding */
+    background-color: #f5f9ee; /* Darker background for header */
+    color: #247291; /* Light text */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
 }
   
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+h1 {
+  margin: 0;
+  font-size: 3em; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
   
   .subtitle {
     font-style: italic;
